@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    $(document).ready(function(){
+        $("body").css("backgroundColor","#05212A")
+        var login=$("<div></div>")
+        login.attr("id","log")
+        login.css({"height":"280px",
+                    "width":"350px",
+                    "backgroundColor":"white",
+                    "border-radius":"07px",
+                    "margin-left":"40%",
+                    "margin-top":"10%",
+                })
+        const logi=$("<h1>LOG IN</h1>")
+        const name=$(`<input type="username" placeholder="USERNAME">`)
+        const pass=$(`<input type="password" placeholder="PASSWORD">`)
+        const btn=$("<button>Login</button><br><br>")
+        const ach=$("<a>or Sign up</a>")
+        ach.attr("href","#")
+        btn.attr("id","bttn")
+        login.append(logi)
+        login.append(name)
+        login.append(pass)
+        login.append(btn)
+        login.append(ach)
+
+        logi.css({
+            "margin-left":"40px",
+            "padding-top":"30px"
+        })
+        name.css({
+            "padding":"10px",
+            "margin-left":"40px",
+            "padding-top":"04px",
+            "width":"230px",
+            "font-size":"12px"
+
+        })
+        pass.css({
+            "padding":"10px",
+            "margin-left":"40px",
+            "margin-top":"6px",
+            "width":"230px",
+            "font-size":"12px"
+
+        })
+        btn.css({
+            "width":"255px",
+            "margin-top":"10px",
+            "padding":"6px",
+            "margin-left":"40px",
+            "backgroundColor":"#0AA8C2",
+            "border-color":"rgba(255, 255, 255, 0.341)",
+            "border-radius":"03px",
+            "color":"white",
+            "font-size":"17px"
+        })
+        ach.css({
+            "font-size":"15px",
+            "color":"rgb(57, 56, 56)",
+            "margin-left":"133px",
+        })
+        login.appendTo("body")   
+    })
+
+
+
+</script>
+</html>
